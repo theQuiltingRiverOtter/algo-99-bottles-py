@@ -13,7 +13,9 @@ def bottle_song(num: int = 99, drink: str = "beer") -> None:
 
         elif i == 1:
             print(f"{num} bottle of {drink} on the wall, {num} bottle of {drink}.")
-            print(f"Take one down and pass it around, no more bottles of {drink}.")
+            print(
+                f"Take one down and pass it around, no more bottles of {drink} on the wall."
+            )
         else:
             print(f"{num} bottles of {drink} on the wall, {num} bottles of {drink}.")
             print(
@@ -32,7 +34,9 @@ def bottle_song_recursive(
         )
     elif num == 1:
         print(f"{num} bottle of {drink} on the wall, {num} bottle of {drink}.")
-        print(f"Take one down and pass it around, no more bottles of {drink}.")
+        print(
+            f"Take one down and pass it around, no more bottles of {drink} on the wall."
+        )
         bottle_song_recursive(num - 1, drink, upper_limit)
     elif num == 2:
         print(f"{num} bottles of {drink} on the wall, {num} bottles of {drink}.")
